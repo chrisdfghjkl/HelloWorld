@@ -1,4 +1,5 @@
-﻿// create a program that lets a user enter a number of daily eggs
+﻿/*
+// create a program that lets a user enter a number of daily eggs
 // calculate how many can be evenly divided between 4 people + the remainder given to duckbear
 
 Console.WriteLine("How many eggs collected today?");
@@ -10,3 +11,4 @@ int sisterEggs = dailyEggs / 4;
 int duckBearEggs = dailyEggs % 4;
 
 Console.WriteLine("Each sister receives " + sisterEggs + " eggs, and the remaining " + duckBearEggs + " eggs are for duckbear");
+*/
