@@ -1,3 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// create a program that lets a user enter a number of daily eggs
+// calculate how many can be evenly divided between 4 people + the remainder given to duckbear
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("How many eggs collected today?");
+string dailyEggsInput = Console.ReadLine();
+
+int dailyEggs = int.Parse(dailyEggsInput);
+
+int sisterEggs = dailyEggs / 4;
+int duckBearEggs = dailyEggs % 4;
+
+Console.WriteLine("Each sister receives " + sisterEggs + " eggs, and the remaining " + duckBearEggs + " eggs are for duckbear");
