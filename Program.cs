@@ -27,8 +27,13 @@ string provinceInput = Console.ReadLine();
 
 //------Convert user input to number - int since you can't own partial property - anc calculate score
 int estateScore = int.Parse(estateInput) * 1;
+int duchyScore = int.Parse(duchyInput) * 3;
+int provinceScore = int.Parse(provinceInput) * 6;
 
-Console.WriteLine(estateScore);
+//------Calc total holding score
+int holdingScore = estateScore + duchyScore + provinceScore;
+
+Console.WriteLine("You have a holding score of " + holdingScore + "!");
 
 
 
