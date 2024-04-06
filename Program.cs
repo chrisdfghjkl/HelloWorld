@@ -17,4 +17,19 @@ Console.WriteLine("Each sister receives " + sisterEggs + " eggs, and the remaini
 //each property type adheres to point system - provinces - 6pt, duchies - 3pt, and estates - 1pt
 //application should take 3 strings, convert them to numbers, add and return total
 
+//------Take user input
+Console.WriteLine("How many estates do you have?");
+string estateInput = Console.ReadLine();
+Console.WriteLine("How many duchies do you have?");
+string duchyInput = Console.ReadLine();
+Console.WriteLine("How many provinces do you have?");
+string provinceInput = Console.ReadLine();
+
+//------Convert user input to number - int since you can't own partial property - anc calculate score
+int estateScore = int.Parse(estateInput) * 1;
+
+Console.WriteLine(estateScore);
+
+
+
 
