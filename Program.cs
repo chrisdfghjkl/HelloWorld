@@ -37,6 +37,33 @@ Console.WriteLine("You have a holding score of " + holdingScore + "!");
 */
 //create app that takes in target row and column, and computes where to place neighboring
 //squad members on grid and displays them per challenge directions (alignment, color, result beep)
+//Result format:
+
+//Target Row? 6
+// Target Column? 5
+// Deploy to:
+// (6, 4)
+// (5, 5)
+// (6, 6)
+// (7, 5)
+Console.Title = "Defense of Consolas";
+
+Console.Write("Target Row? ");
+string rowInput = Console.ReadLine();
+Console.Write("Target Column? ");
+string columnInput = Console.ReadLine();
+
+int rowNum = int.Parse(rowInput);
+int columnNum = int.Parse(columnInput);
+
+Console.Beep();
+Console.WriteLine("Deploy to:");
+Console.BackgroundColor = ConsoleColor.Red;
+Console.ForegroundColor = ConsoleColor.Black;
+Console.WriteLine($"({rowNum}, {columnNum - 1})");
+Console.WriteLine($"({rowNum - 1}, {columnNum})");
+Console.WriteLine($"({rowNum}, {columnNum + 1})");
+Console.WriteLine($"({rowNum + 1}, {columnNum})");
 
 
 
