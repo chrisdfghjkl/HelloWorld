@@ -34,7 +34,7 @@ int provinceScore = int.Parse(provinceInput) * 6;
 int holdingScore = estateScore + duchyScore + provinceScore;
 
 Console.WriteLine("You have a holding score of " + holdingScore + "!");
-*/
+
 //create app that takes in target row and column, and computes where to place neighboring
 //squad members on grid and displays them per challenge directions (alignment, color, result beep)
 //Result format:
@@ -64,6 +64,7 @@ Console.WriteLine($"({rowNum}, {columnNum - 1})");
 Console.WriteLine($"({rowNum - 1}, {columnNum})");
 Console.WriteLine($"({rowNum}, {columnNum + 1})");
 Console.WriteLine($"({rowNum + 1}, {columnNum})");
+*/
 
 
 
