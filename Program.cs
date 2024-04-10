@@ -86,7 +86,7 @@ else
 {
     Console.WriteLine("Try again");
 }
-*/
+
 //Clocktower challenge -- create a program that takes in a number
 //and returns 'tick' if even and 'tock' if odd
 
@@ -102,3 +102,11 @@ else
 {
     Console.WriteLine("Tock!");
 }
+
+//Ternary operator in c#:
+Console.WriteLine("What is your score?");
+string input = Console.ReadLine();
+int score = int.Parse(input);
+string textToDisplay = score > 70 ? "You passed!" : "You failed :(";
+Console.WriteLine(textToDisplay);
+*/
