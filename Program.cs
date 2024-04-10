@@ -71,6 +71,11 @@ string scoreText = Console.ReadLine();
 int score = int.Parse(scoreText);
 
 if (score == 100)
+{
     Console.WriteLine("A+ Wow Congrats!");
-
+}
+else
+{
+    Console.WriteLine("Try again.");
+}
 
