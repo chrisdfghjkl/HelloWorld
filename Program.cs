@@ -64,7 +64,7 @@ Console.WriteLine($"({rowNum}, {columnNum - 1})");
 Console.WriteLine($"({rowNum - 1}, {columnNum})");
 Console.WriteLine($"({rowNum}, {columnNum + 1})");
 Console.WriteLine($"({rowNum + 1}, {columnNum})");
-*/
+
 Console.WriteLine("Enter score: ");
 string scoreText = Console.ReadLine();
 
@@ -86,4 +86,19 @@ else
 {
     Console.WriteLine("Try again");
 }
+*/
+//Clocktower challenge -- create a program that takes in a number
+//and returns 'tick' if even and 'tock' if odd
 
+Console.WriteLine("Enter swing number:");
+string input = Console.ReadLine();
+int swing = int.Parse(input);
+
+if (swing % 2 == 0)
+{
+    Console.WriteLine("Tick!");
+}
+else
+{
+    Console.WriteLine("Tock!");
+}
