@@ -74,8 +74,16 @@ if (score == 100)
 {
     Console.WriteLine("A+ Wow Congrats!");
 }
+else if (score == 99)
+{
+    Console.WriteLine("So close!");
+}
+else if (score == 50)
+{
+    Console.WriteLine("Pretty bad!");
+}
 else
 {
-    Console.WriteLine("Try again.");
+    Console.WriteLine("Try again");
 }
 
