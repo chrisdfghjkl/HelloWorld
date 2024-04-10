@@ -65,7 +65,12 @@ Console.WriteLine($"({rowNum - 1}, {columnNum})");
 Console.WriteLine($"({rowNum}, {columnNum + 1})");
 Console.WriteLine($"({rowNum + 1}, {columnNum})");
 */
+Console.WriteLine("Enter score: ");
+string scoreText = Console.ReadLine();
 
+int score = int.Parse(scoreText);
 
+if (score == 100)
+    Console.WriteLine("A+ Wow Congrats!");
 
 
