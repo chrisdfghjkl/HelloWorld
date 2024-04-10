@@ -110,3 +110,35 @@ int score = int.Parse(input);
 string textToDisplay = score > 70 ? "You passed!" : "You failed :(";
 Console.WriteLine(textToDisplay);
 */
+//Watchtower challenge-- create app that allows user to enter x & y coordinate
+//and return a direction
+string direction = "";
+Console.WriteLine("Enemy X coordinate:");
+string xInput = Console.ReadLine();
+Console.WriteLine("Enemy Y coordinate:");
+string yInput = Console.ReadLine();
+
+double xNum = double.Parse(xInput);
+double yNum = double.Parse(yInput);
+
+if (yNum > 0)
+{
+    if (xNum < 0) direction = "northwest";
+    else if (xNum == 0) direction = "north";
+    else if (xNum > 0) direction = "northeast";
+}
+else if (yNum == 0)
+{
+    if (xNum < 0) direction = "west";
+    else if (xNum == 0) direction = "here";
+    else if (xNum > 0) direction = "east";
+}
+else if (yNum < 0)
+{
+    if (xNum < 0) direction = "southwest";
+    else if (xNum == 0) direction = "south";
+    else if (xNum > 0) direction = "southeast";
+}
+
+string towerReport = direction == "here" ? "The enemy is here!" : $"The enemy is to the {direction}!";
+Console.WriteLine(towerReport);
