@@ -109,7 +109,7 @@ string input = Console.ReadLine();
 int score = int.Parse(input);
 string textToDisplay = score > 70 ? "You passed!" : "You failed :(";
 Console.WriteLine(textToDisplay);
-*/
+
 //Watchtower challenge-- create app that allows user to enter x & y coordinate
 //and return a direction
 string direction = "";
@@ -142,3 +142,46 @@ else if (yNum < 0)
 
 string towerReport = direction == "here" ? "The enemy is here!" : $"The enemy is to the {direction}!";
 Console.WriteLine(towerReport);
+
+Console.WriteLine("The following items are available:");
+Console.WriteLine($"1 – {"Rope",20}");
+Console.WriteLine($"2 – {"Torches",20}");
+Console.WriteLine($"3 – {"Climbing Equipment",20}");
+Console.WriteLine($"4 – {"Clean Water",20}");
+Console.WriteLine($"5 – {"Machete",20}");
+Console.WriteLine($"6 – {"Canoe",20}");
+Console.WriteLine($"7 – {"Food Supplies",20}");
+Console.Write("What number do you want to see the price of? ");
+int input = int.Parse(Console.ReadLine());
+int gold = 0;
+
+if (input == 1) { gold = 10;}
+else if (input == 2) { gold = 15;}
+else if (input == 3) { gold = 25;}
+else if (input == 4) { gold = 1;}
+else if (input == 5) { gold = 20;}
+else if (input == 6) { gold = 200;}
+else if (input == 7) { gold = 1;}
+
+
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+
+if (name == "Chris") gold = gold / 2;
+
+string priceCheck;
+
+priceCheck = input switch
+{
+    1 => $"Rope costs {gold} gold",
+    2 => $"Torches cost {gold} gold",
+    3 => $"Climbing Equipment costs {gold} gold",
+    4 => $"Clean Water costs {gold} gold",
+    5 => $"Machetes cost {gold} gold",
+    6 => $"Canoes cost {gold} gold",
+    7 => $"Food Supplies cost {gold} gold",
+    _ => "Invalid selection"
+};
+
+Console.WriteLine(priceCheck);
+*/
