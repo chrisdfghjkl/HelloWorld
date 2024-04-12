@@ -185,3 +185,8 @@ priceCheck = input switch
 
 Console.WriteLine(priceCheck);
 */
+
+for (int x = 1; x <= 5; x++)
+{
+    Console.WriteLine(x); 
+}
