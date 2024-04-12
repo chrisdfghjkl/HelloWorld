@@ -216,7 +216,6 @@ for (int currentRow = 1; currentRow <= totalRows; currentRow++)
         Console.Write("*");
     Console.WriteLine();
 }
-*/
 
 while (true)
 {
@@ -266,3 +265,25 @@ while (true)
 
     break;
 }
+
+
+for (int currentTurn = 1; currentTurn <= 100; currentTurn++)
+{
+    if (currentTurn % 3 == 0 && currentTurn % 5 == 0)
+    {
+        Console.WriteLine($"{currentTurn}: Combo Blast!");
+    } 
+    else if (currentTurn % 3 == 0)
+    {
+        Console.WriteLine($"{currentTurn}: Fire");
+    }
+    else if (currentTurn % 5 == 0)
+    {
+        Console.WriteLine($"{currentTurn}: Electric");
+    }
+    else
+    {
+        Console.WriteLine($"{currentTurn}: Normal");
+    }
+}
+*/
