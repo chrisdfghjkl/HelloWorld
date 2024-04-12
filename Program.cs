@@ -184,9 +184,85 @@ priceCheck = input switch
 };
 
 Console.WriteLine(priceCheck);
+
+
+while (true)
+{
+    Console.Write("Think of a number: ");
+    string input = Console.ReadLine();
+
+    if (input == "quit" || input == "exit")
+    {
+        break;
+    }
+
+    int number = int.Parse(input);
+
+    if (number == 12)
+    {
+        Console.WriteLine("Pick a different number please.");
+        continue;
+    }
+
+    Console.WriteLine($"{number} is a great choice! It's one less than {number + 1}");
+}
+
+
+int totalRows = 5;
+int totalColumns = 10;
+for (int currentRow = 1; currentRow <= totalRows; currentRow++)
+{
+    for (int currentColumn = 1; currentColumn <= totalColumns; currentColumn++)
+        Console.Write("*");
+    Console.WriteLine();
+}
 */
 
-for (int x = 1; x <= 5; x++)
+while (true)
 {
-    Console.WriteLine(x); 
+    Console.Write("User 1-- Enter a number between 0 and 100: ");
+    string input = Console.ReadLine();
+    
+    if (input == "quit" || input == "exit")
+    {
+        Console.WriteLine("Quitting...");
+        break;
+    }
+
+    int number = int.Parse(input);
+
+    if (number < 0 || number > 100)
+    {
+        Console.WriteLine("Please choose a different number");
+        continue;
+    }
+    Console.Clear();
+    Console.WriteLine("User 2-- Guess the number");
+    while (true)
+    {
+        Console.Write("What is your next Guess? ");
+    
+        int guess = int.Parse(Console.ReadLine());
+
+        if (guess < number)
+        {
+            Console.WriteLine($"{guess} is too low.");
+            continue;
+        }
+
+        if (guess > number)
+        {
+            Console.WriteLine($"{guess} is too high.");
+            continue;
+        }
+
+        if (guess == number)
+        {
+            Console.WriteLine("Correct!");
+            Console.WriteLine("Closing...");
+            break;
+        }
+    }
+
+    break;
 }
