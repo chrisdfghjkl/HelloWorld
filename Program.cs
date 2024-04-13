@@ -286,4 +286,38 @@ for (int currentTurn = 1; currentTurn <= 100; currentTurn++)
         Console.WriteLine($"{currentTurn}: Normal");
     }
 }
+
+int[] scores = new int[5]; 
+   scores[0] = 1000;  
+
+int number = int.Parse(Console.ReadLine());
+int[] array = new int[number];
+
+for (int index = 0; index < array.Length; index++)
+{
+    array[index] = 1;
+}
+
+Console.WriteLine(array[1]);
 */
+int[] array1 = new int[5];
+Console.WriteLine("The Replicator of D'To");
+
+for (int index = 0; index < array1.Length; index++)
+{
+    Console.Write($"Enter number {index + 1}: ");
+    array1[index] = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Your array: [" + array1[0] + ", " + array1[1] + ", " + array1[2] + ", " + array1[3] + ", " + array1[4] + "]");
+Console.Write("Press [Enter] to duplicate...");
+Console.ReadLine();
+int[] arrayCopy = new int[5];
+
+for (int index = 0; index < array1.Length; index++)
+{
+    arrayCopy[index] = array1[index];
+}
+Console.WriteLine("Duplicate array: [" + arrayCopy[0] + ", " + arrayCopy[1] + ", " + arrayCopy[2] + ", " + arrayCopy[3] + ", " + arrayCopy[4] + "]");
+
+
